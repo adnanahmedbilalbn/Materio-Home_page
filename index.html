@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Materio - Material Design</title>
+    <link rel="icon" href="Images/favicon (2).ico">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/b23ae1a7bb.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+<!-- GOOGLE_FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Paytone+One&family=Poppins&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Paytone+One&family=Poppins&display=swap');
+</style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Sidebar Holder -->
+        
+        <nav style="overflow-y: auto; z-index:1; " id="sidebar"  >
+            <div class="sidebar-header">
+                <h6> <b>MATERIO </b></h6>
+            </div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" ><i class="fa-solid fa-house"></i><span class="dashboard">DASHBOARD</span> </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-user-gear"></i><span class="setting">SETTINGS</span> </a>
+                    </li>
+                    <div class="line"></div><p>pages</p><div class="line"></div>
+                    <li>
+                    <a href="#" ><i class="fa-solid fa-right-to-bracket"></i><span class="login">Login</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-user-plus"></i> <span class="register">Register</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-sharp fa-solid fa-circle-exclamation"></i><span class="error">Error</span></a>
+                </li>
+                <div class="line"></div><p>User Interference</p><div class="line"></div>
+                <li>
+                    <a href="#" ><i class="fa-solid fa-font"></i><span class="typo">Typography</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-shapes"></i><span class="icons">Icons</span></a>
+                    </li>
+                    <li>
+                    <a href="#" ><i class="fa-solid fa-table"></i><span class="table">Tables</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-cube"></i> <span class="form">Form Layout</span> </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- <div class="fixed" style="overflow-y: auto; z-index:1;">
+            <button class="f-bn btn btn-danger btn-outline-danger" >UPGRADE TO PRO</button>
+        </div> -->
+        <!-- Page Content -->
+            <div id="content">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid ">
+
+          <!-- SLIDE_BAR_BUTTON -->
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn ">
+                        <span class="bt-sp"></span>
+                        <span class="bt-sp"></span>
+                        <span class="bt-sp"></span>
+                    </button>
+                                        
+                   <div class="search_box" onclick="hideSideBar()">
+                    
+                    <span><i class=" fa-solid fa-magnifying-glass s"></i></span>
+                    <input style="border: thin 1px grey;  border-top-left-radius: 50px;border-top-right-radius: 50px;
+                    border-bottom-left-radius: 50px;    border-bottom-right-radius: 50px;"
+                     class="search" type="search">
+                         </div>    
+                         <div class="row"onclick="hideSideBar()">
+                    <div class="buutons">
+                        <ul class="nav navbar-nav ">
+                            <li class="nav-item active">
+                                <button class="git-btn">
+                                    <img src="https://img.shields.io/github/stars/themeselection/materio-mui-react-nextjs-admin-template-free?style=social" alt="">
+                                </button>
+                            </li>
+                           
+                            <li class="nav-item Theme"onclick="hideSideBar()">
+                            <button class="btn left-btn Theme"onclick="hideSideBar()"><a class="nav-link" href="#"><i class="fa-solid fa-moon Theme"></i></a></button>    
+                            </li>
+                            <li class="nav-item"onclick="hideSideBar()">
+                                <div class="dropdown show d1"onclick="hideSideBar()">
+                                    <a onclick="hideSideBar()" class="btn btn-light buton dropdown-toggle" href="#" role="button" id="dropdownMenuLink" 
+                                    data-toggle="dropdown"  aria-expanded="false">
+                                    <i class="fa-solid fa-bell"></i></a>                                  
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#"><div><span>Notification</span> <span class="purple">8 New</span> </div></a>
+                                      <a class="dropdown-item" href="#"><img src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/avatars/4.png
+                                        " alt="" height="30"><span>Congratulations</span></a>
+                                      <a class="dropdown-item" href="#"> <img src="Images\vu.jpeg" height="30" alt=""> <span>User Registered</span></a>
+                                      <hr>
+                                      <a class="dropdown-item" href="#"> <img src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/avatars/5.png" alt="" height="30"> <span>New Message Recieved</span> </a>
+                                      <a class="dropdown-item" href="#"> <img src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/misc/paypal.png" height="30" alt=""><span>Paypal</span> </a>
+                                      <a class="dropdown-item" href="#"> <img src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/avatars/3.png" height="30" alt=""><span>Revised Order</span>  </a>
+
+                                      <hr>
+
+                                      <a class="dropdown-item noti" href="#">Read All Notifications</a>
+                                    </div>
+                                  </div>
+                            </li>
+                            <li class="nav-item"onclick="hideSideBar()">
+                                <div class="dropdown show d2">
+                                    <a onclick="hideSideBar()" class="btn admin-dd btn-sm btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" 
+                                    data-toggle="dropdown"  aria-expanded="false">
+                                        <img class="admin" src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/avatars/1.png" 
+                                        alt="" ></a> 
+                                                                         
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                      <a class="dropdown-item" href="#"><img class="admin" 
+                                        src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/avatars/1.png" alt="" height="40"> 
+                                        <div><span>Jhon Doe</span></div>
+                                    </a>  
+                                    <hr>                                
+                                      <a class="dropdown-item" href="#"> <span>Profile</span></a>
+                                      <a class="dropdown-item" href="#"> <span>Inbox</span></a>
+                                      <a class="dropdown-item" href="#"> <span>Chat</span></a>
+                                      <hr>
+                                      <a class="dropdown-item" href="#"> <span>Setting</span></a>
+                                      <a class="dropdown-item" href="#"> <span>Pricing</span></a>
+                                      <a class="dropdown-item" href="#"> <span>FAQ</span> </a>
+                                      <hr>
+                                      <a class="dropdown-item" href="#"><span>Log Out</span></a>
+                                    </div>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </nav>
+<div class="content-div " onclick="hideSideBar()">
+    <div class="row sales">
+        <div class="col col-lg-6 col-md-12 col-sm-12 m1">
+            <div class="content-typography sales-1">
+
+                <div class="text"onclick="hideSideBar()">
+                    <h5>Congratulations John! 🥳</h5>
+                    <pclass="b-s">Best seller of the month
+                </p>
+                    <h6 class="k">$42.8k</h6>
+                    <button class="v-s">View Sales</button>
+                    <img src="Images/user registered_files/triangle-light.png" alt="" class="tri">
+                    <img src="Images/user registered_files/trophy.png" alt="" height="50" class="tro">
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-6 col-md-12 col-sm-12 m2">
+            <div class="content-typography sales-2"onclick="hideSideBar()">
+
+                <div class="heading text">
+                    <h5>Statics Card</h5>
+                    <span class="b-s">Total 48.5% growth 😎 this month</span></div>
+                    <!-- <div class="remove row"> -->
+                        <div class="col col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12 saale saale-1">
+                            <div class="sale-img">
+                                <img src="Images/arrow.jpeg" alt="sales" class="arrow">
+                                </div>
+                                <div class="sale-text-1">
+                                    <span class="b-s">Sales</span>
+                                    <h5 >245K</h5>
+                            </div>
+ 
+                        </div>
+                        <div class="col col-12 col-xl-3  col-lg-3 col-md-4 col-sm-12 saale saale-2">
+                            <div class="sale-img">
+                                <img src="Images/user.jpeg" alt="sales" class="arrow">
+                                </div>
+                                <div class="sale-text-2">
+                                    <span class="b-s">Customers</span>
+                                    <h5 >12.5K</h5>
+                            </div>
+                            
+                        </div>
+                        <div class="col col-12 col-xl-3  col-lg-3 col-md-3 col-sm-12 saale saale-3">
+                            <div class="sale-img">
+                                <img src="Images/product.jpeg" alt="sales" class="arrow">
+                                </div>
+                                <div class="sale-text-3">
+                                    <span class="b-s">Products</span>
+                                    <h5 >1.54K</h5>
+                            </div>
+                            
+                        </div> 
+                        <div class="col col-12 col-xl-3 col-lg-3 col-md-3 col-sm-12 saale saale-4">
+                            <div class="sale-img">
+                                <img src="Images/Revenu.jpeg" alt="sales" class="arrow">
+                                </div>
+                                <div class="sale-text-4">
+                                    <span class="b-s">Revenue</span>
+                                    <h5>88K</h5>
+                            </div>
+  
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="Earnings row"onclick="hideSideBar()">
+                    <div class="weekly content-typography col col-12 col-xl-3 col-lg-3 col-md-6 col-sm-12"onclick="hideSideBar()">
+                        <div class="week-head">
+                            <h6>WEEKLY OVERVIEW</h6>
+                        </div>
+                        <div class="week-txt">
+                            <p >Your sales performance is 45% 😎 better compared to last month</p><span class="week-perc">45%</span> 
+                        </div>
+                        <button class="detail">DETAILS</button>
+                    </div>
+                    
+                    <div class="totals content-typography col col-12 col-xl-4 col-lg-4 col-md-5 col-sm-12"onclick="hideSideBar()">
+                        <div class="total-head">
+                            <h6>TOTAL EARNINGS</h6>
+                        </div>
+                        <div class="total-in">
+                            <div class="total-head">
+                                <h2 class="t-h">$24,895 <span></span></h2>
+                                <p class="t-p">Compared to $84,325 last year</p>
+                            </div>
+
+                            <div class="EARN-IMG">
+                                <div class="zip-img">
+                                    <img src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/cards/logo-zipcar.png" alt="">
+                                    <div>
+                                        <h4>ZIP CAR <p>Vuejs, React & HTML</p></h4>
+                                    </div>
+                                    <div class="ani">
+                                        <p class="a-p">$24,895.65</p>
+                                        <span class="bar"></span>
+                                    </div>
+                                </div>
+
+                                <div class="bit-img">
+                                    <img src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/cards/logo-bitbank.png" alt="">
+                                    <div>
+                                        <h4>BIT BANK <p>Sketch, Figma & XD</p></h4>
+                                    </div>  <div class="ani1">
+                                        <p class="a-p">$8,650.20
+                                        </p><span class="bar1"></span>
+                                    </div>
+                                </div>
+                                <div class="aviato-img">
+                                    <img src="https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/images/cards/logo-aviato.png" alt="">
+                                    <div>
+                                        <h4>AVIATO <p>HTML & Angular</p></h4>
+                                    </div>  
+                                    <div class="ani2">
+                                        <p class="a-p">$1,245.80
+                                        </p><span class="bar2"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+                    <div class="overall col col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12"onclick="hideSideBar()">
+                        <div class="row">
+                            <div class="col col-6 col-lg-6 col-md-5 col-sm-6  profits1  content-typography ">
+                                <img src="Images\profit-gd44f60eb5_1280.png" alt="" height="40">
+                                <p class="pro-p">Total Profit</p>
+                                <h5>$25.6k </h5><span class="pro-span">Weekly Profit</span><span class="per per1">+ 42%</span>
+
+                            </div>
+                            <div class="col col-6 col-lg-5 col-md-5 col-sm-6  profits2 content-typography ">
+                                <img src="https://driveelectricmn.org/wp-content/uploads/2016/08/DEMN_Money_MiniIcon_1.svg" alt="" height="40">
+                                <p class="pro-p">Refunds</p>
+                                <h5>$78k </h5><span class="pro-span">Past Month</span><span class="per per2">- 15%</span>
+
+                            </div>
+                            <div class="col col-6 col-lg-6 col-md-5 col-sm-6  profits3 content-typography ">
+                                <img src="https://eu.community.samsung.com/t5/image/serverpage/image-id/814505i12CF6C81EFE73A45/image-size/large?v=v2&px=999" alt="" height="40">
+                                <p class="pro-p">New Project</p>
+                                <h5>862</h5><span class="pro-span">Yearly Project</span><span class="per per3" >-18%</span>
+
+                            </div>
+                            <div class="col col-6 col-lg-5 col-md-5 col-sm-6  profits4 content-typography ">
+                                <img height="40" src="https://images.carriercms.com/image/upload/w_300,dpr_1.0,q_auto,f_auto/v1589656643/icp/day-and-night/icons/question-mark.png" alt="">
+                                <p class="pro-p">Sales Queries</p>
+                                <h5>15</h5><span class="pro-span">Last Week</span><span class="per per4">-18%</span>
+
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+                    <div class="countries content-typography col col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div>
+                            <h6 class="sc">SALES BY COUNTRIES</h6>
+                        </div>
+                        <div class="count-cont1 ">
+                            <div class="count-img">
+                                <img src="Images/us.png" alt="" height="40">
+                                <div class="count-txt1"><p class="c-p">$8,656k <span class="us">USA</span> <span class="ci">+ 25.8%</span></p></div>
+                                <div class="c-s">894k <br> <span class="c-sp">sales</span></div>
+                            </div>
+                        </div>
+
+
+
+
+                             <div class="count-cont2">
+                            <div class="count-img">
+                                <img src="Images/UK.png" alt="" height="40">
+                                <div class="count-txt2"><p class="c-p">$2,415k<span class="us">UK</span> <span class="cl">- 6.2%</span></p></div>
+                                <div class="c-s">645k <br> <span class="c-sp">sales</span></div>
+                            </div>
+                        </div>
+
+
+                        <div class="count-cont2">
+                            <div class="count-img">
+                                <img src="https://www.nyn.es/themes/tema_nyn/images/logo-horiz-nn-rgb-amarillo.svg" alt="" height="40">
+                                <div class="count-txt3"><p class="c-p">$2,415k<span class="us">India</span> <span class="ci">+ 12.4%</span></p></div>
+                                <div class="c-s">148k <br> <span class="c-sp">sales</span></div>
+                            </div></div>
+
+
+
+                            <div class="count-cont2">
+                                <div class="count-img">
+                                    <img src="https://api.sofascore.app/api/v1/team/451575/image" alt="" height="40">
+                                    <div class="count-txt4"><p class="c-p">$745k<span class="us">Japan</span> <span class="cl">- 11.5%</span></p></div>
+                                    <div class="c-s">86k <br> <span class="c-sp">sales</span></div>
+                                </div>
+                            </div>
+                
+                
+                            <div class="count-cont2">
+                                <div class="count-img">
+                                    <img src="https://logos-download.com/wp-content/uploads/2019/01/NewsKo_Logo-700x700.png" alt="" height="40">
+                                    <div class="count-txt5"><p class="c-p">$45k<span class="us">Korea</span> <span class="ci">+ 16.2%</span></p></div>
+                                    <div class="c-s">42k <br> <span class="c-sp">sales</span></div>
+                                </div>
+                            </div>
+            
+                </div>
+
+
+
+
+                    <!-- <div class="payments content-typography col col-12 col-xl-8 col-lg-8 col-md-6 col-sm-12"onclick="hideSideBar()"> -->
+                            <div class="deposit content-typography col col-12 col-xl-8 col-lg-7 col-md-12 col-sm-12">
+                                <div class="dep-head">
+                                    <h6 class="sc">Deposit</h6>
+                                </div>
+                                <div class="view">
+                                    <span class="c-sp">View All</span>
+                                </div>
+
+
+                                <div class="dep-cont1">
+                                    <div class="dep-img">
+                                        <img src="Images\user registered_files\gumroad.png" alt="" height="30">
+                                        <div class="dep-txt1"><p class="d-p">Gumroad Account <span class="us">Sell UI Kit</span></p></div>
+                                        <div  class="d-s d-sp">+$4,650</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="dep-cont2">
+                                    <div class="dep-img">
+                                        <img src="Images\user registered_files\mastercard-label.png" alt="" height="30">
+                                        <div class="dep-txt2"><p class="d-p">Mastercard <span class="us">Deposit</span></p></div>
+                                        <div  class="d-s d-sp">+$92,705</div>
+                                    </div>
+                                </div>
+
+                                <div class="dep-cont2">
+                                    <div class="dep-img">
+                                        <img src="Images\user registered_files\stripe.png" alt="" height="30">
+                                        <div class="dep-txt3"><p class="d-p">Stripe Account <span class="us">iOS Application</span></p></div>
+                                        <div  class="d-s d-sp">+$957</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="dep-cont2">
+                                    <div class="dep-img">
+                                        <img src="Images\user registered_files\american-bank.png" alt="" height="30">
+                                        <div class="dep-txt4"><p class="d-p">American Bank<span class="us">Bank Transfer</span></p></div>
+                                        <div  class="d-s d-sp">+$6,837</div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="dep-cont5">
+                                    <div class="dep-img">
+                                        <img src="Images\user registered_files\citi-bank.png" alt="" height="25">
+                                        <div class="dep-txt5"><p class="d-p">Bank Account <span class="us">Wallet</span></p></div>
+                                        <div  class="d-s d-sp">+$446</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="withdraw content-typography col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="dep-head">
+                                    <h6 class="sc">Withdraw</h6>
+                                </div>
+                                <div class="view">
+                                    <span class="c-sp">View All</span>
+                                </div>
+                                <div class="dep-cont1 ">
+                                    <div class="dep-img">
+                                        <img src="C:\Users\Zaavia\Desktop\Materio\Images\user registered_files\google.png" alt="" height="30">
+                                        <div class="dep-txt1"><p class="d-p">Google Adsense<span class="us">paypal</span></p></div>
+                                        <div  class="d-s  cl">-$145</div>
+                                    </div>
+                                </div>
+                                <div class="dep-cont2 ">
+                                    <div class="dep-img">
+                                        <img src="C:\Users\Zaavia\Desktop\Materio\Images\user registered_files\github.png" alt="" height="30">
+                                        <div class="dep-txt2"><p class="d-p">Github Enterprise <span class="us">Security</span></p></div>
+                                        <div  class="d-s cl"> -$1870</div>
+                                    </div>
+                                </div>
+                                <div class="dep-cont2 ">
+                                    <div class="dep-img">
+                                        <img src="C:\Users\Zaavia\Desktop\Materio\Images\user registered_files\slack.png" alt="" height="30">
+                                        <div class="dep-txt3"><p class="d-p">Upgrade Slack Plan<span class="us">Debit & Credit</span></p></div>
+                                        <div  class="d-s  cl">-$450</div>
+                                    </div>
+                                </div>
+                                <div class="dep-cont2 ">
+                                    <div class="dep-img">
+                                        <img src="C:\Users\Zaavia\Desktop\Materio\Images\user registered_files\digital-ocean.png" alt="" height="30">
+                                        <div class="dep-txt4"><p class="d-p">Digital Ocean<span class="us">Cloud Hosting</span></p></div>
+                                        <div  class="d-s  cl">-$540</div>
+                                    </div>
+                                </div>
+                                <div class="dep-cont5 ">
+                                    <div class="dep-img">
+                                        <img src="C:\Users\Zaavia\Desktop\Materio\Images\user registered_files\aws.png" alt="" height="25">
+                                        <div class="dep-txt5"><p class="d-p">AWS Account<span class="us">Cloud Pattern</span></p></div>
+                                        <div  class="d-s  cl">-$21</div>
+                                    </div>
+                                </div>
+                            </div>
+                    <!-- </div> -->
+
+                    <div class="table-container content-typography col-12">
+                        <table>
+                            <thead>
+                                <tr class="th">
+                                    <th class="tab m" scope="col">Name</th>
+                                    <th class="tab m"   scope="col">Email</th>
+                                    <th  class="tab m" scope="col">Date</th>
+                                    <th  class="tab m" scope="col">Salary</th>
+                                    <th  class="tab m" scope="col">Age</th>
+                                    <th  class="tab m" scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             
+
+
+
+                
+                                <tr>
+                                    <td class="tab">
+                                        <div>
+                                            <p class="p">Sally Quinn</p>
+                                            <span class="t-p">Human Resources Assistant</span>
+                                        </div>
+                                    </td>
+                                    <td class="tab">eebsworth2m@sbwire.com</td>
+                                    <td class="tab">09/27/2018</td>
+                                    <td class="tab">$19586.23</td>
+
+                                    <td class="tab">27</td>
+                                    <td class="tab">
+                                        <div><span class="t-s c">Current</span></div>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="tab">
+                                        <div>
+                                            <p class="p">Margaret Bowers</p>
+                                            <span class="t-p">Nuclear Power Engineer</span>
+                                        </div>
+                                    </td>
+                                    <td class="tab">kocrevy0@thetimes.co.uk</td>
+                                    <td class="tab">09/23/2016</td>
+                                    <td class="tab">$23896.35</td>
+                                    <td class="tab">61</td>
+                                    <td class="tab">
+                                        <div><span class="t-s pr">Professional</span></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tab">
+                                        <div>
+                                            <p class="p">Minnie Roy</p>
+                                            <span class="t-p">Environmental Specialist</span>
+                                        </div>
+                                    </td>
+                                    <td class="tab">ediehn6@163.com</td>
+                                    <td class="tab">10/15/2017</td>
+                                    <td class="tab">$18991.67</td>
+                                    <td class="tab">59</td>
+                                    <td class="tab">
+                                        <div><span class="t-s r">Rejected</span></div>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="tab">
+                                        <div>
+                                            <p class="p">Ralph Leonard</p>
+                                            <span class="t-p">Sales Representative</span>
+                                        </div>
+                                    </td>
+                                    <td  class="tab">dfalloona@ifeng.com</td>
+                                    <td  class="tab">06/12/2018</td>
+                                    <td  class="tab">$19252.12</td>
+                                    <td  class="tab">30</td>
+                                    <td  class="tab">
+                                        <div><span class="t-s re">Resigned</span></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tab">
+                                        <div>
+                                            <p class="p">Annie Martin</p>
+                                            <span class="t-p">Operator</span>
+                                        </div>
+                                    </td>
+                                    <td class="tab">sganderton2@tuttocitta.it</td>
+                                    <td class="tab">03/24/2018</td>
+                                    <td class="tab">$13076.28</td>
+                                    <td class="tab">66</td>
+                                    <td class="tab">
+                                        <div><span class="t-s a">Applied</span></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tab">
+                                        <div>
+                                            <p class="p">Adeline Day</p>
+                                            <span class="t-p">Senior Cost Accountant</span>
+                                        </div>
+                                    </td>
+                                    <td  class="tab">hnisius4@gnu.org</td>
+                                    <td  class="tab">08/25/2017</td>
+                                    <td  class="tab">$10909.52</td>
+                                    <td  class="tab">33</td>
+                                    <td  class="tab">
+                                        <div><span class="t-s pr">Professional</span></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tab">
+                                        <div>
+                                            <p class="p">Lora Jackson</p>
+                                            <span class="t-p">Geologist</span>
+                                        </div>
+                                    </td>
+                                    <td class="tab">ghoneywood5@narod.ru</td>
+                                    <td class="tab">06/01/2017</td>
+                                    <td class="tab">$17803.80</td>
+                                    <td class="tab">61</td>
+                                    <td class="tab">
+                                        <div><span class="t-s c">Current</span></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="tab">
+                                        <div>
+                                            <p class="p">Rodney Sharp</p>
+                                            <span class="t-p">Cost Accountant</span>
+                                        </div>
+                                    </td>
+                                    <td class="tab">dcrossman3@google.co.jp</td>
+                                    <td class="tab">12/03/2017</td>
+                                    <td class="tab">$12336.17</td>
+                                    <td class="tab">22</td>
+                                    <td class="tab">
+                                        <div><span class="t-s pr">Professional</span></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+           </div>
+           <div class="footer">
+            <div class="copyright">© 2022, Made with ❤️ by <a class="pur" href="#">ThemeSelection</a>            <div class="floatt"><a href="#">MIT License</a><a href="#">More Themes</a><a href="#">Documentation</a><a href="#">Support</a></div> </div>
+
+        </div>
+                 
+
+
+        </div>
+        </div>
+
+       
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+$(".Theme").on('click',function(){
+    $('body').toggleClass("theme");
+    $('.navbar').toggleClass("theme");
+    $('.search').toggleClass("theme");
+    $('.sidebar-header').toggleClass("theme");
+    $('#sidebar').toggleClass("theme");
+    $('.dropdown-menu').toggleClass("theme");
+    $('.dropdown-item span').toggleClass("theme");
+    $('.Theme').toggleClass("theme");
+    $('.left-btn').toggleClass("theme");
+    $('.buutons .nav-item .left-btn').toggleClass("theme");
+    $('.buutons .nav-item li').toggleClass("theme");
+
+
+
+
+
+})
+    $("#sidebar ul li").on('click',function(){
+            $("#sidebar ul li.active").removeClass("active"); 
+            $(this).addClass("active"); 
+        });         
+    $(document).ready(function toggle() {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+
+
+    function hideSideBar() {
+        if ($("#sidebar").hasClass("active"));{
+            const sidebar = document.getElementById("sidebar")
+            sidebar.classList.remove("active")
+            
+       }
+    }
+    
+
+    // if ($(window).width() < 960){
+    // $(".remove").removeClass("row")};     
+// on($(window).width()>768 && $(window).width()<1200){
+//     $(".sales-1").addClass("pad")
+// }
+
+   
+   </script>
+
+</body>
+</html>

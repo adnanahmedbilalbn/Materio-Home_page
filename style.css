@@ -1,0 +1,1131 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+    body {
+        margin: 0px;
+        color: rgba(58, 53, 65, 0.87);
+        font-family: Inter, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.15px;
+        background-color: rgb(244, 245, 250);
+        
+    }
+    .fixed{  
+        margin-top: 600px;
+        margin-left: 1100px;
+        position: fixed;
+    }
+    .f-bn{
+        display: -webkit-box;
+        background-image: linear-gradient(RED,rgb(218, 20, 20),rgb(195, 11, 11));
+        box-shadow: red;
+        font-size: .7rem;
+        color: white;
+        padding-top: 10px;padding-bottom: 10px;padding-left: 20px;padding-right: 20px;
+    }
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.navbar {
+    background: rgb(244, 245, 250);
+position: static;
+}
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+
+
+
+
+.divs{
+    margin-top: 100px;
+    margin-left: 20rem;
+}
+.text{
+    text-align: left;
+}
+.buton{
+    background-color: rgb(244, 245, 250);
+}
+.show{
+ background-color: rgb(244, 245, 250);
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: rgb(244, 245, 250)    !important;
+}
+#dropdownMenuLink button{
+    background-color: rgb(244, 245, 250);
+
+}
+
+.btn-primary{
+    background-color: rgb(244, 245, 250);
+
+}
+
+.show img {
+    border-radius: 50px;
+}
+.purple{
+    background-color: #9155FD;
+    border-radius: 35px;
+    padding: 4px;
+    margin-left:20px ;
+}
+.noti{
+    background-color: #9155FD; color: white;
+    border-radius: 10px;
+}
+.git-btn{
+    margin-top: -20px;margin-right: 1px;
+    border: none;
+}
+.left-btn{
+    background-color: rgb(244, 245, 250);
+    margin-top: -10px;margin-right: 10px;
+}
+.left-btn:hover{
+    background-color: #ddd;
+    border-radius: 50px;
+}
+.admin-dd{
+    border-radius: 50px;
+}
+.admin{
+    height: 40px;
+    border-radius: 50px;
+}
+
+.d1{
+    margin-top: -3px;margin-right: 5px;
+}
+.d2{
+    margin-top:-10px;
+}
+.css-q9emij {
+    width: 8px;
+    height: 8px;
+    border-radius: 500px;
+    background-color: #56CA00;
+    box-shadow: 0 0 0 2px #fff;
+}
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+.search{
+    border: transparent .1px rgb(68, 68, 68); 
+     border-top-left-radius: 20px   ; border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+    float: left;
+    height: 42px;
+    width: 250px;
+    font-style: none;
+    text-align: center;
+    flex-wrap: wrap;
+    color: rgb(151, 151, 151);    
+    background: rgb(244, 245, 250);
+    margin-left: 13rem;
+}
+/* button{
+    position: relative;
+    left: 20rem;
+} */
+
+.s{
+    margin-left: -230px;
+    margin-top: 10px;
+}
+.search-btn{
+    height: 1px;
+     background-color: rgb(244, 245, 250);
+
+}
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 20px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+/* .wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    perspective: 1500px;
+} */
+
+
+
+.buutons ul
+{ 
+white-space:nowrap; 
+height: 1em;
+width: 100%;
+} 
+
+.buutons li
+{ 
+display:inline; 
+} 
+#sidebarCollapse{
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+#sidebar {
+    overflow-y: scroll;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+    height: 100%;
+}
+#sidebar.active {
+    margin-left: -250px;
+    transform: rotateY(100deg);
+}
+#sidebar .sidebar-header {
+    padding: 20px;padding-bottom: none;
+    margin-top: -35px;
+}
+#sidebar .sidebar-header h6{
+
+    font-size: 1.5rem;
+    color: rgba(58, 53, 65, 0.87);
+    text-transform: uppercase;    
+    line-height: normal;
+}
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+}
+#sidebar ul p {
+    padding: 10px;
+}
+#sidebar ul.components li{
+    margin-top: 20px;
+}
+
+
+
+#sidebar ul li a {
+
+/* margin-right: 2px; */
+margin: 0;
+padding: 7px;
+font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.5;
+letter-spacing: 0.15px;
+color: rgba(58, 53, 65, 0.87);
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+#sidebar ul li a i{
+    margin-right: 10px;
+
+}
+#sidebar ul li a:hover {
+    border-top-right-radius: 50px;border-bottom-right-radius: 50px;
+    color: #7386D5;
+    background: #fff;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background-image:linear-gradient(98deg,#C6A7FE ,#9155FD 94%);
+    border-top-right-radius: 50px;border-bottom-right-radius: 50px;
+
+}#sidebar ul li a{
+    padding-top: 10px;    padding-bottom: 10px;
+
+}
+.dashboard{
+    padding-right: 28px;
+}
+.setting{
+    padding-right: 50px;
+}
+.login{
+    padding-right: 70px;
+}
+.register{
+    padding-right: 50px;
+}.error{
+    padding-right: 70px;
+}.typo{
+    padding-right: 30px;
+}.icons{
+    padding-right: 70px;
+}.table{
+    padding-right: 50px;
+}.form{
+    padding-right: 20px;
+}
+.theme{
+    background-color:black;
+    color:rgb(40, 36, 61);}
+
+.dropdown-toggle::after {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+.sd-p{
+    margin: 20px;
+    font-size: .5rem;
+}
+.sidebar-header h6{
+    margin-top: 50px;
+}
+#sidebar ul li a i {
+    margin-left: 15px;
+}
+.navbar{
+    margin-bottom: 50px;
+}
+#sidebar ul li {
+    padding-right: 50px;
+    margin-top: 5px;
+}
+
+/* ---------------------------------------------------CONTENT STYLE----------------------------------------------------- */
+
+#content {
+    /* position: absolute; */
+    margin-top: -15px;
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+}
+#sidebarCollapse span:first-of-type {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+    opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+#sidebarCollapse.active span {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+/* ---------------------------------------------------
+    Content divs
+----------------------------------------------------- */
+/* 
+.content-div{
+    background-color: #555;
+} */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+    SALES
+----------------------------------------------------- */
+
+
+
+
+
+
+.sales{
+    margin-top: -30px;
+}
+.sales-1{
+    height: 200px;
+    margin-left: 15rem;
+    margin-top: 1rem;
+    position: static;
+    padding-top: 5px;
+  
+}
+.text{
+    margin: 12px;
+    padding: 1px;
+}
+
+
+.sales-2{
+    height: 200px;
+    width: 100%;
+    margin-left: 1px;
+    margin-top: 1rem;
+    position: static;
+    padding-top: 5px;
+    /* background-color: #FFF;
+    color: rgba(58, 53, 65, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 6px;
+    background-image: none;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px 0px rgb(58 53 65 / 10%); */
+}
+.content-typography{
+    border-radius: 5px;
+    background-color: #FFF;
+    color: rgba(58, 53, 65, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 6px;
+    background-image: none;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px 0px rgb(58 53 65 / 10%);
+}
+.b-s{
+    font-size: .8rem;
+}
+.tri{
+    right: 15px;
+    bottom: 0;
+    height: 170px;
+    position: absolute;
+}
+.tro{
+    right: 50px;
+    bottom: 20px;
+    height: 98px;
+    position: absolute;
+}
+.pad{
+    padding-right: 200px;
+}
+.k{
+    color: #7386D5;
+    font-size: 1.5rem;
+    margin-top: 30px;margin-bottom: 30px;
+}
+.v-s{
+    width: 150px;
+    background-color: #9155FD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: -5px;
+    padding: 5px;
+    box-shadow: #9155FD;
+    cursor: pointer;
+}.v-s:hover{
+    background-color:#7931ff ;
+}
+.arrow{
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow:  #f5f5f5;
+}
+.sale-text{
+    position: absolute;
+    top: 25px;right: 30px;
+}
+.saale{
+    position: absolute;
+    top: 5rem;   
+}
+/* .saale-1{
+    margin-left: 2rem;
+} */
+.saale-2{
+    margin-left: 9rem;
+}.saale-3{
+    margin-left: 19rem;
+}.saale-4{
+    margin-left: 26rem;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------
+    EARNINGS
+----------------------------------------------------- */
+.Earnings{
+    margin-left: 15.5rem;
+    margin-top: 30px;
+
+}
+.weekly{
+    background-color: #FFF;
+    height: 400px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: -10px;
+ 
+}
+.totals{
+    background-color: #FFF;
+    height: 400px;    border-radius: 10px;
+    margin-left: 30px;
+
+}.overall{
+    height: 400px;margin-left:55px;
+}
+.overall div{
+    border-radius: 10px; 
+    height: 190px;  
+    background-color: #fff;
+}
+.overall .row{
+    background-color: inherit;
+}
+.overall img{
+    margin-top: 25px;
+}
+.profits2{
+   margin-left: 25px;
+}.profits3,.profits4{
+    margin-top: 20px;
+}
+.profits4{
+    margin-left: 20px;
+}
+.pro-p{
+    font-weight: 500;
+    margin-top: 20px;
+    color: black;
+    font-size: small;
+}
+.pro-span{
+    font-size: small;
+}
+.overall h5{
+    color: black;font-weight: 400;
+}
+.per{
+    position: absolute;
+    bottom: 50px;left: 50px;
+    font-size: small;color: red;
+}
+.per1{
+    color: #56CA00;
+    left: 80px;
+}
+.per2{
+    left: 70px;
+}
+.total-head,.week-head{
+    font-weight: bold;
+    margin-top: 20px;
+}.total-head h6,.week-head h6{
+    font-weight: 600;
+}
+.week-txt p{
+    font-size: .7rem;
+    margin-left: 60px;
+}
+.week-perc{
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: absolute;top: 50px;
+}
+.detail{
+    background-color: #9155FD;border: none;width: 100%;height: 10%;color: white;border-radius: 2px;cursor: pointer;
+}
+.detail:hover{
+    background-color: #7931ff;
+}
+.countries,.payments{
+    margin-top: 20px;
+}
+
+.countries{
+    margin-left: -10px;
+    height: 430px;width: 100px;
+}.payments{
+    margin-left: 5px;
+    height: 430px;width: 100px;
+}
+.zip-img{
+    height: 100%;
+}
+.EARN-IMG img{
+    margin-top: -1px;
+    float: left;
+    height: 40px;margin-right: 5px;padding: 10px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 5px;
+}
+.totals p{
+    font-size: 15px;
+}
+.bar {
+    overflow: hidden;
+    display: block;
+    height: 4px;width: 50px;
+    z-index: 0;
+    background-color: purple;
+}.bar1{
+    overflow: hidden;
+    display: block;
+    height: 4px;width: 50px;
+    z-index: 0;
+    background-color: blue;
+}.bar2{
+    overflow: hidden;
+    display: block;
+    height: 4px;width: 50px;
+    z-index: 0;
+    background-color: grey;
+}
+.ani{    
+    position: absolute;
+    bottom:  135px;
+    left: 250px;
+}
+.ani1{    
+    position: absolute;
+    bottom:  220px;
+    left: 250px;
+}
+.ani2{    
+    position: absolute;
+    top: 310px;
+    left: 250px;
+}
+
+.zip-img{
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.bit-img{
+    padding-bottom: 30px;
+}
+
+.profits3 img{
+    border-radius: 20px;
+}
+.t-h{
+    font-weight: 600;
+}
+.total-in p{
+    color: black;
+    font-size: .7rem;
+}
+.total-in h4{
+    font-size: medium;
+}
+
+
+
+.sc{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.count-txt1{
+    position: absolute;top: 80px;left: 70px;
+}.us{
+    color: #555;
+    position: absolute;
+    top: 20px;left: 1px;
+    font-size: .8rem;
+}.c-p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+}.ci{
+    margin-left: 3px;
+    font-size: .8rem;
+    color: #56CA00;
+}
+.cl{
+    margin-left: 3px;
+    font-size: .8rem;
+    color: red;
+}
+.c-s{
+    font-size: .9rem;
+    float: right;
+}.c-sp{
+    color: #999;
+    font-size: .7rem;
+}
+.count-txt2{
+    position: absolute;top: 150px;left: 70px;
+}
+.count-txt3{
+    position: absolute;top: 220px;left: 70px;
+}
+
+.count-txt4{
+    position: absolute;top: 290px;left: 70px;
+}
+.count-txt5{
+    position: absolute;top: 360px;left: 70px;
+}
+.count-cont1{
+    margin-top: 30px;
+}
+.count-cont2{
+    margin-top: 30px;
+}
+.count-cont3{
+    margin-top: 10px;
+}
+.count-cont4{
+    margin-top: 10px;
+}
+.count-cont5{
+    margin-top: 10px;
+}
+
+.withdraw{
+    margin-top: 10px;
+    margin-left: -10px;
+    padding-bottom: 10px;
+}
+.deposit{
+    margin-left: 5px;
+    margin-top: 20px;
+    height: 430px;
+}
+.dep-head{
+    float: left;
+}
+.view{
+    float: right;
+    margin-top: 30px;
+}
+
+
+
+
+.dep-txt1{
+    position: absolute;top: 80px;left: 60px;
+}.dep-txt2{
+    position: absolute;top: 140px;left: 60px;
+}.dep-txt3{
+    position: absolute;top: 200px;left: 60px;
+}.dep-txt4{
+    position: absolute;top: 265px;left: 60px;
+}.dep-txt5{
+    position: absolute;top: 335px;left: 65px;
+}
+.dep-cont1{
+    margin-top: 90px;
+}
+.dep-cont2{
+    margin-top: 30px;
+}.dep-cont5{
+    margin-top: 50px;
+}
+.d-s{
+    font-size: 1.1rem;
+    float: right;
+}.d-sp{
+    color: #56CA00;
+}
+.d-p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+}
+/* #sidebar{
+    position: sticky;
+} */
+
+.table-container {
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+
+.tab{
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: rgba(58, 53, 65, 0.87);
+    display: table-cell;
+    vertical-align: inherit;
+    border-bottom: 1px solid rgba(231, 230, 232, 1);
+    text-align: left;
+    padding: 16px;padding-right: 50px;
+    border-bottom: 1px solid rgba(58, 53, 65, 0.12);
+}
+
+
+.th{
+    padding-left: 20px;
+}
+.m{
+    padding-left: 25px;
+}
+
+.table-container table th{
+    padding-top: 30px;
+
+    font-weight: 600;
+    font-size: .87rem;
+}
+.t-p{
+    color: #999;
+    font-size: .6rem;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.t-s{
+    background-color: #56CA00;padding: 10px;border-radius: 10px;color: #fff;
+}
+.c{
+    background-color: #7931ff;
+}
+.r{
+    background-color: red;
+}
+.re{
+    background-color: yellow;
+}
+.pr{
+    background-color: #56CA00;
+}
+.a{
+    background-color: aqua;
+}.p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+.pur{
+    color: #7931ff;
+}
+.footer{
+    margin-top: 20px;
+}.floatt {
+    margin-left: 150px;
+    float: right;
+}
+.floatt a{
+    color: #7931ff;
+    margin-left: 50px;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 1200px) {
+    .withdraw{
+        padding-bottom: 12px;
+
+        margin-left: -10px;
+    }
+   
+    /* .ani{    
+        display: none;
+    
+    }
+    .ani1{    
+        display: none;
+
+    }
+    .ani2{    
+        display: none;
+
+    }
+ */
+
+.floatt{
+    display: none;
+}
+ .week-txt p{
+    font-size: .7rem;
+    margin-left: 0px;
+}
+.week-perc{
+display: none;
+}
+
+
+    .totals{
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    .overall{
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    .Earnings{
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .payments{
+        margin-left: -10px;
+    }
+    .countries{
+        margin-left: -10px;
+    }
+
+    .content-div{
+        margin-left:.1px;
+    }
+    #sidebar {
+        position: fixed;
+        margin-left: -250px;
+        transform: rotateY(90deg);
+        min-width: 220px;
+        max-width: 200px;
+        background-color: white;
+    }
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+/* .buutons{
+    position: relative;
+    left: 17rem;top: 30px;
+} */
+.git-btn{
+    display: none;
+}
+.divs{
+    margin-top: 1px;
+    margin-left: 1px;
+}
+.admin{
+   height: 25px; 
+   border-radius: 50px;
+   margin-top: 2px;
+}
+.left-btn{
+   margin-top: -18px;
+    margin-left: -130px;
+}
+.admin-dd{
+    border-radius: 50px;
+}
+#sidebarCollapse{
+    display: inline;
+}
+.s{
+    margin-left: -150px;
+    }
+    .search{
+        margin-left: -120px;
+        width: 200%;
+    }
+    .nav-item .d1{
+        margin-top: -10px;
+        margin-left: -90px;
+    }.nav-item .d2{
+        margin-top: -10px;
+        margin-left: -40px;
+    }
+    #sidebarCollapse{
+        margin-left: -30px;
+     
+    }
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+    .sales{
+        margin-top: -40px;
+    }
+    .sales-1{
+        margin-left: 1px;margin-top: 1px;
+        height: 100%;width: 100%;
+
+    }
+    .sales-2{
+        margin-left: 1px;margin-top: 5px;
+        padding-bottom: 480px;
+
+    }
+.sale-img img{
+    height: 50px;
+}
+    .tro{
+        position: absolute;   
+    }
+    .tr{
+        width: 200px;
+        background-color: white;
+    }
+    .saale-2{
+        margin-left: 1px;
+        margin-top: 10px;
+    }.saale-3{
+        margin-top: 10px;
+        margin-left: 1px;
+    }.saale-4{
+        margin-top: 10px;
+        margin-left: 1px;
+    }
+    .saale{
+        position: static;
+        
+    }
+.sale-text-1{
+    margin-top: -50px;
+    margin-left: 80px;
+}
+.sale-text-2{
+    margin-top: -50px;
+    margin-left: 80px;
+}.sale-text-3{
+    margin-top: -50px;
+    margin-left: 80px;
+}.sale-text-4{
+    margin-top: -50px;
+    margin-left: 80px;
+}
+
+#sidebar{
+    position: absolute;
+    padding-bottom: 10rem;
+}
+
+#content{
+    flex-wrap: wrap;
+}  .table-container {
+    width: 30em;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+}
+@media (min-width:990px) and (max-width:1200px){
+    
+    .Earnings{
+        margin-left: 5px;
+        margin-top: 20px;
+    
+    }.weekly{
+        background-color: #FFF;
+        height: 400px;
+        border-radius: 10px;
+        width: 100%;
+        margin-left: -10px;
+     
+    }
+    .totals{
+        background-color: #FFF;
+        height: 400px;    border-radius: 10px;
+    
+    }.overall{
+        height: 400px;margin-left: 50px;
+    }
+  
+}
+
+@media (min-width:780px) and (max-width:1200px){
+   
+    .totals{
+        margin-left: 40px;
+    }
+}
+
+@media (min-width:415px) and (max-width:450px){
+    .sales-1{
+        width: 370px;
+    }
+    .tri{
+        display: none;
+    }
+    .tro{
+        position: relative;
+        left: 50px;
+    }
+   
+}
+
+@media (min-width:449px) and (max-width:600px){
+    .sales-1{
+        width: 450px;
+    } 
+    .tri{
+        display: none;
+    }
+    .tro{
+        position: relative;
+        left: 50px;
+    }
+
+}
+@media(max-width:990px){
+#sidebar{
+    overflow-y: scroll;
+    position: fixed;
+}
+.deposit{
+      margin-left: -10px;
+}.profits2{
+    margin-left: 2px;
+}.profits1{
+    margin-left: -2px;
+}
+ .profits4{
+     margin-left: 2px;
+ } .profits3{
+    margin-left: -2px;
+}.overall{
+    margin-left: -10px;
+ }
+/* .overall{
+    margin-left: 7px;
+}.overall .row{
+    width: 70%;
+} */
+}
